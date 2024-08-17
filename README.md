@@ -1,34 +1,42 @@
-# Drowsiness Detection using Spatiotemporal Autoencoder
-This Python project focuses on building a drowsiness detection system utilizing a Spatiotemporal Autoencoder. The system processes webcam images, applies a Deep Learning model to classify whether the person's eyes are open or closed, and alerts the user when signs of drowsiness are detected.
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection de somnolence utilisant un Autoencoder Spatiotemporel</title>
+</head>
+<body>
 
-# Project Structure
-train.py: Script for training the Spatiotemporal Autoencoder model. It loads video frames, preprocesses images, constructs the model architecture, and trains the model to detect anomalies.
+<img src="https://github.com/user-attachments/assets/c2239ac8-9c0b-434f-a47f-dfc473fbf5e1" alt="Image de détection de somnolence">
 
-test.py: Script for real-time drowsiness detection. It uses the pre-trained model to classify eye states in a live video feed, detecting and notifying abnormal events.
+<h1>Détection de somnolence utilisant un Autoencoder Spatiotemporel</h1>
 
-# Instructions
-## Training the Model
-Execute train.py to capture frames from a video, preprocess the images, and train the Spatiotemporal Autoencoder model.
+<p>Ce projet Python se concentre sur la construction d'un système de détection de somnolence utilisant un Autoencoder Spatiotemporel. Le système traite les images de webcam, applique un modèle d'apprentissage profond pour classifier si les yeux de la personne sont ouverts ou fermés, et alerte l'utilisateur lorsque des signes de somnolence sont détectés.</p>
 
-bash
-Copy code
-python train.py
-The trained model will be saved as "saved_model.h5".
+<h2>Structure du projet</h2>
+<ul>
+    <li><strong>train.py</strong> : Script pour entraîner le modèle Autoencoder Spatiotemporel. Il charge les images vidéo, prétraite les images, construit l'architecture du modèle et entraîne le modèle à détecter les anomalies.</li>
+    <li><strong>test.py</strong> : Script pour la détection de somnolence en temps réel. Il utilise le modèle pré-entraîné pour classifier les états des yeux dans un flux vidéo en direct, détectant et notifiant les événements anormaux.</li>
+</ul>
 
-## Real-time Drowsiness Detection
-Replace __path_to_custom_test_video in test.py with the path to your custom test video.
+<h2>Instructions</h2>
 
-Execute test.py to initiate real-time drowsiness detection using the pre-trained model.
+<h3>Entraînement du modèle</h3>
+<p>Exécutez train.py pour capturer des images d'une vidéo, prétraiter les images et entraîner le modèle Autoencoder Spatiotemporel.</p>
+<pre><code>python train.py</code></pre>
+<p>Le modèle entraîné sera sauvegardé sous le nom "saved_model.h5".</p>
 
-bash
-Copy code
-python test.py
-The script will display the video feed with detected abnormal events highlighted.
+<h3>Détection de somnolence en temps réel</h3>
+<p>Remplacez __path_to_custom_test_video dans test.py par le chemin vers votre vidéo de test personnalisée.</p>
+<p>Exécutez test.py pour initier la détection de somnolence en temps réel en utilisant le modèle pré-entraîné.</p>
+<pre><code>python test.py</code></pre>
+<p>Le script affichera le flux vidéo avec les événements anormaux détectés mis en évidence.</p>
 
-## Dependencies
-Ensure you have the required libraries installed:
+<h3>Dépendances</h3>
+<p>Assurez-vous d'avoir installé les bibliothèques requises :</p>
+<pre><code>pip install opencv-python numpy keras imutils</code></pre>
 
-bash
-Copy code
-pip install opencv-python numpy keras imutils
-Feel free to explore, experiment, and contribute to enhance the effectiveness of this drowsiness detection system. Safe driving!
+<p>N'hésitez pas à explorer, expérimenter et contribuer pour améliorer l'efficacité de ce système de détection de somnolence. Bonne route en toute sécurité !</p>
+
+</body>
+</html>
